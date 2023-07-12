@@ -2,6 +2,14 @@
 
 This is a framework to organize data that relates to human myocardial specimens in the Gill Cardiovascular Biorepository.
 
+This repo does not contain source code. All of the functionality is handed by [MATLAB_cardiac_biobank](https://github.com/kenatcampbellmusclelab/MATLAB_cardiac_biobank)
+
+This document explains how to:
+
++ [upload new experimental data](upload/upload.md)
++ merge the experimental data with clinical results
++ deidentify the merged data and share with others
+
 ## Organization
 
 
