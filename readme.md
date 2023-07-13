@@ -4,11 +4,11 @@ This is a framework to organize data that relates to human myocardial specimens 
 
 This repo does not contain source code. All of the functionality is handed by [MATLAB_cardiac_biobank](https://github.com/kenatcampbellmusclelab/MATLAB_cardiac_biobank)
 
-This document explains how to:
+This document explains how:
 
-+ [upload new experimental data](upload/upload.md)
-+ merge the experimental data with clinical results
-+ deidentify the merged data and share with others
++ to [upload new experimental data](docs/upload/upload.md)
++ the clinical results are [deidentified and merged](docs/deid_and_merge/deid_and_merge.md) with the experimental data
++ the [merged data are updated on OneDrive](docs/onedrive/onedrive.md)
 
 ## Organization
 
@@ -17,14 +17,14 @@ This document explains how to:
 
 flowchart TD
 
-    style new_expts fill:#f90
-    style figs fill:#f90
-    style onc_inv fill:#f9f
-    style clin_db fill:#f9f
-    style merge fill:#0ff
-    style dc fill:#0ff
-    style expt_db fill:#0ff
-    style od fill:#0ff
+    style new_expts fill:#990
+    style figs fill:#990
+    style onc_inv fill:#933
+    style clin_db fill:#933
+    style merge fill:#00f
+    style dc fill:#00f
+    style expt_db fill:#00f
+    style od fill:#00f
     
 
     pqd --> a_ef
@@ -46,8 +46,9 @@ flowchart TD
     merge_MATLAB --> f_ef
     f_ef --> od_cd
     od_cd --> |Outdated data\nmoved to legacy folder\nwith MATLAB|od_lf
-    od_cd -->figs_make
-    
+    od_cd --> sb_pr
+    sb_pr -->figs_make
+        
     subgraph new_expts[New experiments]
     pqd[Publication quality data]
     end
@@ -71,9 +72,9 @@ flowchart TD
         lab[Lab]
         ken[Ken]
         megan[Megan]
-        style lab fill:#f90
-        style megan fill:#f9f
-        style ken fill:#0ff
+        style lab fill:#990
+        style megan fill:#933
+        style ken fill:#00f
     end
 
     subgraph merge[Merge databases]
@@ -118,9 +119,13 @@ flowchart TD
         dc_MATLAB[MATLAB]
     end
 
-    subgraph od[OneDrive]
-    od_cd[Current data]
-    od_lf[Legacy folder]
+    subgraph od[Ken's PC]
+        od_cd[Current data]
+        od_lf[Legacy folder]
+    end
+
+    subgraph sb[SyncBack Pro]
+        sb_pr[Profile\nruns on change\nupdates files on OneDrive]
     end
 
     subgraph figs[Figure creation]
