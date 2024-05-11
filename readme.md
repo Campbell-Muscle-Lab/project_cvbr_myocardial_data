@@ -1,5 +1,7 @@
 # Project_cvbr_myocardial_data
 
+## Overview
+
 This is a framework to organize data that relates to human myocardial specimens in the Gill Cardiovascular Biorepository.
 
 This repo does not contain source code. All of the functionality is handed by [MATLAB_cardiac_biobank](https://github.com/kenatcampbellmusclelab/MATLAB_cardiac_biobank)
@@ -10,8 +12,7 @@ This document explains how:
 + the clinical results are [deidentified and merged](docs/deid_and_merge/deid_and_merge.md) with the experimental data
 + the [merged data are updated on OneDrive](docs/onedrive/onedrive.md)
 
-## Organization
-
+## Summary
 
 ````mermaid
 
