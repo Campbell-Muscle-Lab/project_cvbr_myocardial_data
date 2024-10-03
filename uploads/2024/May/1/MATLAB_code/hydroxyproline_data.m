@@ -16,7 +16,7 @@ up_prop.record_id = d.Hashcode
 up_prop.redcap_repeat_instrument = repmat({'biochemistry'}, [size(d,1), 1]);
 up_prop.redcap_repeat_instance = repmat({'new'}, [size(d,1), 1]);
 up_prop.biochem_data_url = repmat({lab_archives_url}, [size(d,1), 1]);
-up_prop.biochem_collagen_hydroxy_ug_to_mg = d.collagen_per_tissue_mass;
+up_prop.biochem_hydroxy_ug_to_mg = d.HYP_per_tissue_mass;
 
 % Tidy the hashcodes
 for i = 1 : size(d,1)

@@ -1,8 +1,8 @@
 function generate_titin_upload
 
-titin_prop_data_file = '../expt_data/titin_isoform_raw_data_5May24_vetted.xlsx';
+titin_prop_data_file = '../expt_data/titin_isoform_raw_data_11May24.xlsx';
 output_file = '../upload/titin_prop_upload.csv';
-lab_archives_url = 'https://mynotebook.labarchives.com/share/Campbell%2520Lab/MTA3My44fDY3MzMyMS84MjYtMzIxNC9UcmVlTm9kZS8yNDcyMDg5NDQ3fDI3MjUuNzk5OTk5OTk5OTk5Nw==';
+lab_archives_url = 'https://mynotebook.labarchives.com/share/Campbell%2520Lab/MTA2OC42MDAwMDAwMDAwMDAxfDY3MzMyMS84MjItMzIxMy9UcmVlTm9kZS8yNjkzMjk2MDE2fDI3MTIuNg==';
 
 % Code
 
