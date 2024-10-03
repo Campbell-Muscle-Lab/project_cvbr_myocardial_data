@@ -1,23 +1,9 @@
-remote_theme: pmarsceill/just-the-docs
+title: CVBR myocardial data
+description: Experimental data from myocardium procured by the Gill Cardiovascular Biorepository
+theme: just-the-docs
+math: mathjax
+url: https://campbell-muscle-lab.github.io/project_cvbr_myocardial_data
 
-# Auxiliary links for the upper right navigation.
 aux_links:
-  "Campbell Muscle Lab":
-    - "http://www.campbellmusclelab.org"
-  "Lab GitHub":
-    - "http://campbell-muscle-lab.github.io"
-  "Repo GitHub":
-    - "https://github.com/Campbell-Muscle-Lab/project_cvbr_myocardial_data"
-  
-
-# Not a big fan of dark mode. I think the light looks better.
-# color_scheme: "dark"
-
-# You can display an image instead of the site's title like this.
-# logo: "/assets/images/example-image.png"
-
-# Footer
-footer_content: "Written by the Campbell Muscle Lab"
-
-# This is the title of the website
-title: "CVBR Myocardial data"
+  Data repo: https://github.com/Campbell-Muscle-Lab/project_cvbr_myocardial_data
+  Campbell lab: http://www.campbellmusclelab.org/
