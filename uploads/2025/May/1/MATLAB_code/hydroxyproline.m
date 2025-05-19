@@ -12,10 +12,10 @@ output_files = { ...
     '../upload/hyp.csv'};
 
 expt_data_field_strings = { ...
-    'HYP_per_tissue_mg'};
+    'HYP_per_tissue_mass'};
 
 redcap_field_strings = { ...
-    'biochem_hydroxy__ug_to_mg'};
+    'biochem_hydroxy_ug_to_mg'};
 
 % Code
 
