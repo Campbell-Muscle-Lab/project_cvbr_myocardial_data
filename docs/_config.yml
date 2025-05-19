@@ -1,3 +1,5 @@
+remote_theme: pmarsceill/just-the-docs
+
 title: CVBR myocardial data
 description: Experimental data from myocardium procured by the Gill Cardiovascular Biorepository
 theme: just-the-docs
